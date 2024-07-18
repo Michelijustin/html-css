@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="nome de usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="20" size="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icep">CEP</label>
+            <input type="text" name="cep" id="icep" required size="10" minlength="8" maxlength="8">
+        </p>
+        <p>
+            <label for="isexo">Sexo</label>
+            <input type="text" name="sexo" id="isexo" required minlength="1" maxlength="1" size="1"  placeholder="S ou F">
+        </p>
+        <p>
+            <label for="ino">nome:</label>
+            <input type="text" name="nome" id="ino" required minlength="3" maxlength="13" placeholder="nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenh">senha</label>
+            <input type="password" name="senha" id="isenh" required minlength="8" maxlength="10" size="10" placeholder="Min e max 10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
